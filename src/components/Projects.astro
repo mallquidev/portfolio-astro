@@ -2,15 +2,14 @@
 import projects from '../config/projects.json';
 console.log(projects)
 ---
-<section class="flex flex-col items-center justify-center mt-10 mb-10">
-    <p class="font-bold text-3xl mb-4">Proyectos</p>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<section class="flex flex-col items-center justify-center mt-10 mb-10 px-4">
+    <p class="font-bold text-3xl mb-4 text-center">Proyectos</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {
             projects.map(project => (
-                <article class="w-48 h-80 bg-gray-950 border border-gray-900 select-none flex flex-col justify-between rounded-md">
+                <article class="w-full sm:w-48 h-80 bg-gray-950 border border-gray-900 select-none flex flex-col justify-between rounded-md">
                     <div>
-                        
-                        <img src={project.image} alt="">
+                        <img class="w-full h-40 object-cover rounded-t-md" src={project.image} alt="">
                     </div>
                     <div class="m-2">
                         <div>
@@ -23,12 +22,8 @@ console.log(projects)
                             <p class="text-gray-500 text-sm">{project.description}</p>
                         </div>
                     </div>
-                    
-            
                 </article>
             ))
         }
     </div>
-    
-    
 </section>
