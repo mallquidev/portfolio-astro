@@ -4,25 +4,29 @@ console.log(projects)
 ---
 <section class="flex flex-col items-center justify-center mt-10 mb-10 px-4">
     <p class="font-bold text-3xl mb-4 text-center">Proyectos</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
         {
             projects.map(project => (
-                <article class="w-full sm:w-48 h-80 bg-gray-950 border border-gray-900 select-none flex flex-col justify-between rounded-md">
-                    <div>
-                        <img class="w-full h-40 object-cover rounded-t-md" src={project.image} alt="">
-                    </div>
-                    <div class="m-2">
-                        <div>
-                            <p class="text-slate-200 font-bold flex flex-row justify-between items-center text-sm">{project.title}</p>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-300 h-8 mt-1 mb-2">{project.subtitle}</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-500 text-sm">{project.description}</p>
-                        </div>
-                    </div>
-                </article>
+            <article class="w-full sm:w-48 h-180 bg-gray-950 border border-gray-900 select-none flex flex-col justify-between rounded-md">
+    <div>
+        <img class="w-full h-40 object-cover rounded-t-md" src={project.image} alt="">
+    </div>
+    <div class="m-2 flex flex-col h-full justify-start">
+        <!-- Título siempre arriba -->
+        <div class="mb-1">
+            <p class="text-slate-200 font-bold text-sm">{project.title}</p>
+        </div>
+        <!-- Subtítulo debajo del título -->
+        <div class="mb-2">
+            <p class="text-xs text-gray-300 h-8">{project.subtitle}</p>
+        </div>
+        <!-- Descripción -->
+        <div class="flex-grow flex items-center justify-center">
+            <p class="text-gray-500 text-sm text-pretty">{project.description}</p>
+        </div>
+    </div>
+</article>
+
             ))
         }
     </div>
