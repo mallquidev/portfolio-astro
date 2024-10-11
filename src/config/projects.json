@@ -1,20 +1,24 @@
 [
     {
+        "image": "secute.png",
+        "title": "LADING PAGE",
+        "subtitle": "React vite y tailwind",
+        "link": "https://secutee.vercel.app/",
+        "description": "Este proyecto realize para mostrar los productos que tiene el cliente donde primero iniciamos con un lading page"
+    },
+    {
         "image": "ecommerce.png",
         "title": "ECOMMERCE",
         "subtitle": "Stack MERN (Mysql, Express, React, Nodejs)",
+        "link": "https://github.com/mallquidev/ecommerce-one.git",
         "description": "Este proyecto es una aplicación e-commerce donde los clientes pueden explorar y comprar productos fácilmente. También cuenta con un panel admin para gestionar productos, permitiendo agregar, actualizar y eliminar de forma sencilla."
     },
     {   
         "image": "auth-crud.png",
         "title": "AUTH CRUD",
         "subtitle": "BACKEND",
+        "link": "https://github.com/mallquidev/auth-mern-crud.git",
         "description": "Es una aplicación con autenticación de usuarios y un CRUD completo, permitiendo a los usuarios registrarse, iniciar sesión y gestionar datos de manera segura."
-    },
-    {
-        "image": "project-img.jpeg",
-        "title": "CHAT EN TIEMPO REAL",
-        "subtitle": "CON SOCKET.IO",
-        "description": "EN CREACION..."
     }
+    
 ]
