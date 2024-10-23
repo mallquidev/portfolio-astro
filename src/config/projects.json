@@ -16,9 +16,9 @@
     {   
         "image": "one-page-astro.png",
         "title": "ONE-PAGE",
-        "subtitle": "ASTRO",
-        "link": "https://lusso-beta.vercel.app/",
-        "description": "Es una one-page creado en Astro y Tailwind con JavaScript realizado para un cliente donde mostrara sus polos con diseños de carros"
+        "subtitle": "React vite",
+        "link": "https://lussodrift.vercel.app/",
+        "description": "Es una one-page creado en React vite y Tailwind con JavaScript realizado para un cliente donde mostrara sus polos con diseños de carros"
     },
     {   
         "image": "auth-crud.png",
